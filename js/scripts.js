@@ -7,19 +7,19 @@ $(function() {
     var car = $("input:radio[name=cash]:checked").val();
 
       if (night === "fruit" || person === "pitcher" || cash === "happiness"){
-        $("#ruby").fadeTo("slow", 0.8);
+        $("#ruby").fadeIn(2000).fadeOut(6000);
       } 
       else if (night === "chess" || person === "Hawking"){
-        $("#C").fadeTo("slow", 0.8);
+        $("#C").fadeIn(2000).fadeOut(6000);
       } 
-      else if (night === "beer" || person === "tasty" || cash === "dollars" ||        rather === "beach" || car === "call"){
-        $("#javascript").fadeTo("slow", 0.8);
+      else if (night === "beer" || person === "tasty" || cash === "dollars" ||  rather === "beach" || car === "call"){
+        $("#javascript").fadeIn(2000).fadeOut(6000);
       } 
       else 
       {
-       $("#nothing").fadeTo("slow", 0.8);
-      }
-   
+       $("#nothing").fadeIn(2000).fadeOut(6000);
+      };
+
       event.preventDefault();
       });
 });
